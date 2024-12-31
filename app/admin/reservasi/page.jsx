@@ -8,11 +8,10 @@ import { Home, List, Calendar, User } from "lucide-react";
 const ReservationPage = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
-      {/* Sidebar */}
       <aside className="w-64 bg-white shadow-md">
         <div className="p-6 text-center border-b">
           <Image
-            src="/logo.svg" // Sesuaikan dengan path logo Anda
+            src="/logo.svg"
             alt="Domang Sushi"
             width={64}
             height={64}
@@ -71,7 +70,6 @@ const ReservationPage = () => {
         </nav>
       </aside>
 
-      {/* Main Content */}
       <main className="flex-1 p-6">
         <header className="flex justify-between items-center mb-6">
           <div>
@@ -84,7 +82,6 @@ const ReservationPage = () => {
           </div>
         </header>
 
-        {/* All Reservation Section */}
         <section className="mb-6">
           <h2 className="text-xl font-bold text-gray-700 mb-4">All Reservation</h2>
           <div className="overflow-x-auto">
@@ -113,7 +110,6 @@ const ReservationPage = () => {
           </div>
         </section>
 
-        {/* Total Reservation Section */}
         <section>
           <h2 className="text-xl font-bold text-gray-700 mb-4">Total Reservation</h2>
           <div className="overflow-x-auto">

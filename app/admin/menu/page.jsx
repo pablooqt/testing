@@ -8,11 +8,10 @@ import { Home, List, Calendar, User } from "lucide-react";
 const MenusPage = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
-      {/* Sidebar */}
       <aside className="w-64 bg-white shadow-md">
         <div className="p-6 text-center border-b">
           <Image
-            src="/logo.svg" // Sesuaikan dengan path logo Anda
+            src="/logo.svg" 
             alt="Domang Sushi"
             width={64}
             height={64}
@@ -71,7 +70,6 @@ const MenusPage = () => {
         </nav>
       </aside>
 
-      {/* Main Content */}
       <main className="flex-1 p-6">
         <header className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold text-gray-800">Menus</h1>
@@ -97,7 +95,7 @@ const MenusPage = () => {
                 <tr>
                   <td className="px-4 py-2 border-b">
                     <Image
-                      src="/menu-image.png" // Sesuaikan dengan gambar menu
+                      src="/menu-image.png" 
                       alt="Menu Item"
                       width={40}
                       height={40}

@@ -2,23 +2,22 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link"; // Import Link dari Next.js
+import Link from "next/link";
 import {
   Home,
   List,
   Calendar,
   User,
   Users,
-} from "lucide-react"; // Import ikon dari Lucide
+} from "lucide-react";
 
 const Dashboard = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
-      {/* Sidebar */}
       <aside className="w-64 bg-white shadow-md">
         <div className="p-6 text-center border-b">
           <Image
-            src="/logo.svg" // Sesuaikan path logo Anda
+            src="/logo.svg"
             alt="Domang Sushi"
             width={64}
             height={64}
@@ -77,7 +76,6 @@ const Dashboard = () => {
         </nav>
       </aside>
 
-      {/* Main Content */}
       <main className="flex-1 p-6">
         <header className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>

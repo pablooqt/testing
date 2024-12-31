@@ -8,7 +8,6 @@ import { Home, Menu, Calendar, User } from "lucide-react";
 const UserManagementPage = () => {
   return (
     <div className="flex min-h-screen bg-gray-50">
-      {/* Sidebar */}
       <aside className="w-64 bg-white shadow-sm">
         <div className="p-6 text-center border-b">
           <div className="relative w-16 h-16 mx-auto mb-2">
@@ -61,7 +60,6 @@ const UserManagementPage = () => {
         </nav>
       </aside>
 
-      {/* Main Content */}
       <main className="flex-1 p-8">
         <div className="flex justify-between items-center mb-8">
           <div>
@@ -74,7 +72,6 @@ const UserManagementPage = () => {
           </div>
         </div>
 
-        {/* User Section */}
         <section className="bg-white rounded-xl shadow-sm p-6 mb-6">
           <h2 className="text-lg font-semibold mb-4">User</h2>
           <div className="overflow-x-auto">
@@ -121,7 +118,6 @@ const UserManagementPage = () => {
           </div>
         </section>
 
-        {/* Admin Section */}
         <section className="bg-white rounded-xl shadow-sm p-6">
           <h2 className="text-lg font-semibold mb-4">Admin</h2>
           <div className="overflow-x-auto">

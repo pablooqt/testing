@@ -8,7 +8,6 @@ import { Home, Menu, Calendar, User } from "lucide-react";
 const TableReservationPage = () => {
   return (
     <div className="flex min-h-screen bg-gray-50">
-      {/* Sidebar */}
       <aside className="w-64 bg-white shadow-sm">
         <div className="p-6 text-center border-b">
           <div className="relative w-16 h-16 mx-auto mb-2">
@@ -58,7 +57,6 @@ const TableReservationPage = () => {
         </nav>
       </aside>
 
-      {/* Main Content */}
       <main className="flex-1 p-8">
         <div className="flex justify-between items-center mb-8">
           <div>
