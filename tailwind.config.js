@@ -16,7 +16,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        unbounded: ['var(--font-unbounded)'],
+        poppins: ['var(--font-poppins)'],
       },
     },
   },

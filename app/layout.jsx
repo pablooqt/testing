@@ -1,10 +1,10 @@
-import { Unbounded } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const unbounded = Unbounded({
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-unbounded',
+  variable: '--font-poppins',
 });
 
 export const metadata = {
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${unbounded.variable} font-unbounded antialiased`}>
+      <body className={`${poppins.variable} font-poppins antialiased`}>
         <main className="w-full h-full">{children}</main>
       </body>
     </html>
