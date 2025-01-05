@@ -42,15 +42,20 @@ const menus = [
 
 const MenusPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("Semua");
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setSelectedCategory("Semua");
+    setIsClient(true);
   }, []);
 
   const filteredMenus =
     selectedCategory === "Semua"
       ? menus 
       : menus.filter((menu) => menu.category === selectedCategory);
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <>
@@ -64,12 +69,12 @@ const MenusPage = () => {
           </p>
         </header>
 
-        <div className="flex justify-center mt-6 space-x-4">
+        <div className="flex justify-center mt-6 space-x-4 flex-wrap">
           {["Semua", "Sushi", "Minuman", "Paket"].map((category) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 font-semibold ${
+              className={`px-4 py-2 font-semibold text-sm sm:text-base ${
                 selectedCategory === category
                   ? "text-orange-500 border-b-4 border-orange-500"
                   : "text-gray-500"
@@ -80,7 +85,7 @@ const MenusPage = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
           {filteredMenus.map((menu) => (
             <MenuCard key={menu.id} menu={menu} />
           ))}

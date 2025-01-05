@@ -58,7 +58,7 @@ export default function Hero() {
             </p>
 
             <Link
-              href="#reservation"
+              href="/userReservasi"
               className="bg-[#C06014] text-white text-base font-semibold py-3 px-8 rounded-full hover:bg-[#AD4C10] transition duration-300"
             >
               Make a Reservation
