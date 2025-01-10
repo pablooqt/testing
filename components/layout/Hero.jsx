@@ -65,14 +65,14 @@ export default function Hero() {
             </Link>
 
             <div className="relative w-full max-w-md mt-4">
-              <input
+              {/* <input
                 type="text"
                 placeholder="Menu apa yang kamu inginkan hari ini?"
                 className="w-full py-3 pl-5 pr-16 bg-white rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#C06014]"
-              />
-              <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#C06014] text-white p-2 rounded-full hover:bg-[#AD4C10] transition duration-300">
+              /> */}
+              {/* <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#C06014] text-white p-2 rounded-full hover:bg-[#AD4C10] transition duration-300">
                 <Search size={20} />
-              </button>
+              </button> */}
             </div>
           </div>
 
